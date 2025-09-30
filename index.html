@@ -23,15 +23,89 @@
   >
     <header
       id="main-header"
-      class="fixed w-full py-2 md:py-6 top-0 z-50 backdrop-blur-sm bg-bg-light/80 dark:bg-bg-dark/80 transition-transform duration-300"
+      class="fixed w-full top-0 z-50 backdrop-blur-sm bg-bg-light/80 dark:bg-bg-dark/80 transition-transform duration-300"
     >
       <div
-        class="container mx-auto flex justify-between items-center py-8 md:py-6 px-4 md:px-12"
+        class="container mx-auto flex justify-between items-center py-2 md:py-6 px-4 md:px-12"
       >
-        <div
-          class="text-xl md:text-2xl font-la-belle-aurore text-text-light dark:text-text-dark"
-        >
-          <a href="#">your name</a>
+        <div class="text-text-light dark:text-text-dark">
+          <a href="#">
+            <svg
+              viewBox="0 0 120 120"
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-24 h-24"
+            >
+              <defs>
+                <linearGradient
+                  id="bgGradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop
+                    offset="0%"
+                    style="stop-color: #1e293b; stop-opacity: 1"
+                  />
+                  <stop
+                    offset="100%"
+                    style="stop-color: #0f172a; stop-opacity: 1"
+                  />
+                </linearGradient>
+
+                <linearGradient
+                  id="textGradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="0%"
+                >
+                  <stop
+                    offset="0%"
+                    style="stop-color: #60a5fa; stop-opacity: 1"
+                  />
+                  <stop
+                    offset="100%"
+                    style="stop-color: #34d399; stop-opacity: 1"
+                  />
+                </linearGradient>
+              </defs>
+              <text
+                x="25"
+                y="75"
+                font-family="'JetBrains Mono', 'Fira Code', monospace"
+                font-size="36"
+                font-weight="600"
+                fill="#E1341E"
+              >
+                &lt;
+              </text>
+
+              <!-- Main letters -->
+              <text
+                x="40"
+                y="75"
+                font-family="'JetBrains Mono', 'Fira Code', monospace"
+                font-size="36"
+                font-weight="600"
+                fill="url(#textGradient)"
+              >
+                lm
+              </text>
+
+              <!-- Closing bracket -->
+              <text
+                x="85"
+                y="75"
+                font-family="'JetBrains Mono', 'Fira Code', monospace"
+                font-size="36"
+                font-weight="600"
+                fill="#E1341E"
+              >
+                /&gt;
+              </text>
+            </svg>
+          </a>
         </div>
         <nav class="hidden md:flex items-center space-x-8 text-md">
           <a
@@ -56,6 +130,8 @@
           >
           <a
             href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             class="border border-primary-500 text-text-light dark:text-text-dark px-4 py-2 rounded hover:bg-primary-500/10 dark:hover:bg-primary-300/10 transition-all duration-300"
             >Resume</a
           >
@@ -76,11 +152,13 @@
         </button>
       </div>
     </header>
-    <main class="container min-h-screen py-16 mx-auto px-4 md:px-4">
+    <main class="container min-h-screen pt-14 md:pt-16 mx-auto px-4 md:px-4">
       <!-- Hero -->
       <section
         id="hero"
         class="min-h-screen max-w-4xl mx-auto flex items-center"
+        data-aos="zoom-in"
+        data-aos-delay="300"
       >
         <div class="w-full mx-auto">
           <p
@@ -94,9 +172,9 @@
             Your Name
           </h1>
           <h2
-            class="text-4xl md:text-5xl font-bold text-text-light-muted dark:text-text-dark-muted mt-2 leading-tight"
+            class="text-2xl md:text-4xl font-bold text-text-light-muted dark:text-text-dark-muted mt-2 leading-tight"
           >
-            Web Developer
+            <span id="typed-text"></span>
           </h2>
           <p
             class="mt-8 max-w-xl text-text-light-muted dark:text-text-dark-muted text-lg leading-relaxed"
@@ -120,8 +198,13 @@
       </section>
       <!-- End Hero -->
       <!-- About -->
-      <section id="about" class="min-h-screen max-w-4xl mx-auto py-16">
+      <section
+        id="about"
+        class="min-h-screen max-w-4xl mx-auto py-16"
+        data-aos="fade-up"
+      >
         <h2
+          data-aos="fade-down"
           class="text-3xl md:text-4xl font-bold text-text-light dark:text-text-dark mb-8"
         >
           About Me
@@ -130,25 +213,148 @@
           <div
             class="md:col-span-2 space-y-4 text-text-light-muted dark:text-text-dark-muted"
           >
-            <p>
+            <p data-aos="fade-right">
               Hello! I'm a web developer with a passion for creating elegant and
               functional websites. I specialize in modern frontend technologies
               and enjoy bringing ideas to life in the browser.
             </p>
-            <p>
+            <p data-aos="fade-right">
               I am passionate about learning new technologies and contributing
               to open-source projects. My goal is to create impactful solutions
               through code and continuously improve my skills in modern web
               frameworks and tools.
             </p>
-          </div>
-          <div class="rounded-lg overflow-hidden w-full flex justify-center">
-            <img
-              src="./public/images/profile.png"
-              alt="profile picture"
-              class="w-[75%] md:w-full rounded-lg"
-              loading="lazy"
-            />
+
+            <!-- Skills Section -->
+            <div class="mt-8">
+              <h3
+                data-aos="fade-up"
+                class="text-xl font-semibold text-text-light dark:text-text-dark mb-4"
+              >
+                Skills & Expertise
+              </h3>
+
+              <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <!-- Development -->
+                <div data-aos="fade-up" data-aos-delay="100">
+                  <h4
+                    class="text-sm uppercase tracking-wider text-primary-500 dark:text-primary-300 font-medium mb-2"
+                  >
+                    Development
+                  </h4>
+                  <div class="flex flex-wrap gap-1.5">
+                    <span
+                      class="px-2 py-1 rounded-full bg-primary-500/10 dark:bg-primary-300/10 text-primary-500 dark:text-primary-300 text-xs font-medium border border-primary-500/20 dark:border-primary-300/20"
+                      >JavaScript</span
+                    >
+                    <span
+                      class="px-2 py-1 rounded-full bg-primary-500/10 dark:bg-primary-300/10 text-primary-500 dark:text-primary-300 text-xs font-medium border border-primary-500/20 dark:border-primary-300/20"
+                      >TypeScript</span
+                    >
+                    <span
+                      class="px-2 py-1 rounded-full bg-primary-500/10 dark:bg-primary-300/10 text-primary-500 dark:text-primary-300 text-xs font-medium border border-primary-500/20 dark:border-primary-300/20"
+                      >PHP</span
+                    >
+                  </div>
+                </div>
+
+                <!-- Frameworks -->
+                <div data-aos="fade-up" data-aos-delay="200">
+                  <h4
+                    class="text-sm uppercase tracking-wider text-secondary-500 dark:text-secondary-300 font-medium mb-2"
+                  >
+                    Frameworks
+                  </h4>
+                  <div class="flex flex-wrap gap-1.5">
+                    <span
+                      class="px-2 py-1 rounded-full bg-secondary-500/10 dark:bg-secondary-300/10 text-secondary-500 dark:text-secondary-300 text-xs font-medium border border-secondary-500/20 dark:border-secondary-300/20"
+                      >Express</span
+                    >
+                    <span
+                      class="px-2 py-1 rounded-full bg-secondary-500/10 dark:bg-secondary-300/10 text-secondary-500 dark:text-secondary-300 text-xs font-medium border border-secondary-500/20 dark:border-secondary-300/20"
+                      >Laravel</span
+                    >
+                    <span
+                      class="px-2 py-1 rounded-full bg-secondary-500/10 dark:bg-secondary-300/10 text-secondary-500 dark:text-secondary-300 text-xs font-medium border border-secondary-500/20 dark:border-secondary-300/20"
+                      >Vue</span
+                    >
+                    <span
+                      class="px-2 py-1 rounded-full bg-secondary-500/10 dark:bg-secondary-300/10 text-secondary-500 dark:text-secondary-300 text-xs font-medium border border-secondary-500/20 dark:border-secondary-300/20"
+                      >React</span
+                    >
+                  </div>
+                </div>
+
+                <!-- Frontend -->
+                <div data-aos="fade-up" data-aos-delay="300">
+                  <h4
+                    class="text-sm uppercase tracking-wider text-accent-500 dark:text-accent-300 font-medium mb-2"
+                  >
+                    Styling
+                  </h4>
+                  <div class="flex flex-wrap gap-1.5">
+                    <span
+                      class="px-2 py-1 rounded-full bg-accent-500/10 dark:bg-accent-300/10 text-accent-500 dark:text-accent-300 text-xs font-medium border border-accent-500/20 dark:border-accent-300/20"
+                      >TailwindCSS</span
+                    >
+                    <span
+                      class="px-2 py-1 rounded-full bg-accent-500/10 dark:bg-accent-300/10 text-accent-500 dark:text-accent-300 text-xs font-medium border border-accent-500/20 dark:border-accent-300/20"
+                      >Bootstrap</span
+                    >
+                  </div>
+                </div>
+
+                <!-- Database -->
+                <div data-aos="fade-up" data-aos-delay="400">
+                  <h4
+                    class="text-sm uppercase tracking-wider text-primary-500 dark:text-primary-300 font-medium mb-2"
+                  >
+                    Database
+                  </h4>
+                  <div class="flex flex-wrap gap-1.5">
+                    <span
+                      class="px-2 py-1 rounded-full bg-primary-500/10 dark:bg-primary-300/10 text-primary-500 dark:text-primary-300 text-xs font-medium border border-primary-500/20 dark:border-primary-300/20"
+                      >MySQL</span
+                    >
+                    <span
+                      class="px-2 py-1 rounded-full bg-primary-500/10 dark:bg-primary-300/10 text-primary-500 dark:text-primary-300 text-xs font-medium border border-primary-500/20 dark:border-primary-300/20"
+                      >PostgreSQL</span
+                    >
+                    <span
+                      class="px-2 py-1 rounded-full bg-primary-500/10 dark:bg-primary-300/10 text-primary-500 dark:text-primary-300 text-xs font-medium border border-primary-500/20 dark:border-primary-300/20"
+                      >Prisma</span
+                    >
+                  </div>
+                </div>
+
+                <!-- Tools -->
+                <div data-aos="fade-up" data-aos-delay="500">
+                  <h4
+                    class="text-sm uppercase tracking-wider text-secondary-500 dark:text-secondary-300 font-medium mb-2"
+                  >
+                    Tools
+                  </h4>
+                  <div class="flex flex-wrap gap-1.5">
+                    <span
+                      class="px-2 py-1 rounded-full bg-secondary-500/10 dark:bg-secondary-300/10 text-secondary-500 dark:text-secondary-300 text-xs font-medium border border-secondary-500/20 dark:border-secondary-300/20"
+                      >Postman</span
+                    >
+                    <span
+                      class="px-2 py-1 rounded-full bg-secondary-500/10 dark:bg-secondary-300/10 text-secondary-500 dark:text-secondary-300 text-xs font-medium border border-secondary-500/20 dark:border-secondary-300/20"
+                      >OpenAPI</span
+                    >
+                    <span
+                      class="px-2 py-1 rounded-full bg-secondary-500/10 dark:bg-secondary-300/10 text-secondary-500 dark:text-secondary-300 text-xs font-medium border border-secondary-500/20 dark:border-secondary-300/20"
+                      >Git</span
+                    >
+                    <span
+                      class="px-2 py-1 rounded-full bg-secondary-500/10 dark:bg-secondary-300/10 text-secondary-500 dark:text-secondary-300 text-xs font-medium border border-secondary-500/20 dark:border-secondary-300/20"
+                      >GitHub</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -162,6 +368,7 @@
         </h2>
         <div class="space-y-12">
           <div
+            data-aos="fade-left"
             class="relative pl-8 border-l-2 border-border-light dark:border-border-dark shadow-lg p-4 rounded-lg bg-card-light dark:bg-card-dark"
           >
             <div
@@ -213,6 +420,7 @@
             </ul>
           </div>
           <div
+            data-aos="fade-left"
             class="relative pl-8 border-l-2 border-border-light dark:border-border-dark shadow-lg p-4 rounded-lg bg-card-light dark:bg-card-dark"
           >
             <div
@@ -275,6 +483,7 @@
         </h2>
         <div class="mb-20">
           <div
+            data-aos="fade-up"
             class="relative rounded-lg overflow-hidden bg-card-light dark:bg-card-dark shadow-lg"
           >
             <div class="relative">
@@ -332,7 +541,7 @@
               </div>
               <div class="flex space-x-4">
                 <a
-                  href="https://github.com/username/project1"
+                  href="https://github.com/lbbmkrm/"
                   class="text-text-light-muted dark:text-text-dark-muted hover:text-primary-500 dark:hover:text-primary-300 transition-colors"
                   aria-label="View project on GitHub"
                 >
@@ -388,6 +597,7 @@
         </h3>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
           <div
+            data-aos="fade-up"
             class="bg-card-light dark:bg-card-dark rounded-lg p-6 hover:translate-y-[-5px] transition-all duration-300 shadow-lg"
           >
             <div class="flex justify-between items-start mb-4">
@@ -409,7 +619,8 @@
               </div>
               <div class="flex space-x-3">
                 <a
-                  href="https://github.com/username/project2"
+                  href="https://github.com/lbbmkrm"
+                  target="_blank"
                   class="text-text-light-muted dark:text-text-dark-muted hover:text-primary-500 dark:hover:text-primary-300 transition-colors"
                   aria-label="View project on GitHub"
                 >
@@ -430,6 +641,7 @@
                 </a>
                 <a
                   href="https://project2.demo"
+                  target="_blank"
                   class="text-text-light-muted dark:text-text-dark-muted hover:text-primary-500 dark:hover:text-primary-300 transition-colors"
                   aria-label="View live demo"
                 >
@@ -483,6 +695,8 @@
             </div>
           </div>
           <div
+            data-aos="fade-up"
+            data-aos-delay="200"
             class="bg-card-light dark:bg-card-dark rounded-lg p-6 hover:translate-y-[-5px] transition-all duration-300 shadow-lg"
           >
             <div class="flex justify-between items-start mb-4">
@@ -504,7 +718,8 @@
               </div>
               <div class="flex space-x-3">
                 <a
-                  href="https://github.com/username/project3"
+                  href="https://github.com/lbbmkrm"
+                  target="_blank"
                   class="text-text-light-muted dark:text-text-dark-muted hover:text-primary-500 dark:hover:text-primary-300 transition-colors"
                   aria-label="View project on GitHub"
                 >
@@ -525,6 +740,7 @@
                 </a>
                 <a
                   href="https://project3.demo"
+                  target="_blank"
                   class="text-text-light-muted dark:text-text-dark-muted hover:text-primary-500 dark:hover:text-primary-300 transition-colors"
                   aria-label="View live demo"
                 >
@@ -580,7 +796,8 @@
         </div>
         <div class="mt-10 text-center">
           <a
-            href="https://github.com/username?tab=repositories"
+            href="https://github.com/lbbmkrm"
+            target="_blank"
             class="inline-block px-6 py-3 border border-primary-500 text-primary-500 dark:text-primary-300 rounded hover:bg-primary-500/10 dark:hover:bg-primary-300/10 transition-all duration-300"
           >
             View More Projects
@@ -597,6 +814,7 @@
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
           <form
+            data-aos="fade-right"
             action="https://formspree.io/f/your-form-id"
             method="POST"
             class="space-y-6 shadow-lg p-6 rounded-lg bg-card-light dark:bg-card-dark"
@@ -669,7 +887,10 @@
               </button>
             </div>
           </form>
-          <div class="space-y-8 flex flex-col justify-center">
+          <div
+            data-aos="fade-left"
+            class="space-y-8 flex flex-col justify-center"
+          >
             <div class="space-y-4">
               <div class="flex items-start space-x-4">
                 <div class="text-primary-500 dark:text-primary-300 mt-1">
@@ -764,7 +985,8 @@
               </h3>
               <div class="flex space-x-5">
                 <a
-                  href="https://github.com/username"
+                  href="https://github.com/lbbmkrm"
+                  target="_blank"
                   class="text-text-light-muted dark:text-text-dark-muted hover:text-primary-500 dark:hover:text-primary-300 transition-colors"
                   aria-label="GitHub"
                 >
@@ -784,7 +1006,8 @@
                   </svg>
                 </a>
                 <a
-                  href="https://linkedin.com/in/username"
+                  href="https://www.linkedin.com/in/labib-makarim-415435313/"
+                  target="_blank"
                   class="text-text-light-muted dark:text-text-dark-muted hover:text-primary-500 dark:hover:text-primary-300 transition-colors"
                   aria-label="LinkedIn"
                 >
@@ -812,9 +1035,10 @@
                   </svg>
                 </a>
                 <a
-                  href="https://twitter.com/username"
+                  href="https://www.instagram.com/lbbmkrm_/"
+                  target="_blank"
                   class="text-text-light-muted dark:text-text-dark-muted hover:text-primary-500 dark:hover:text-primary-300 transition-colors"
-                  aria-label="Twitter"
+                  aria-label="Instagram"
                 >
                   <svg
                     class="h-6 w-6"
@@ -823,12 +1047,32 @@
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
+                    <rect
+                      x="2"
+                      y="2"
+                      width="20"
+                      height="20"
+                      rx="5"
+                      ry="5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    ></rect>
                     <path
-                      d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                      d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                       stroke-width="2"
                     ></path>
+                    <line
+                      x1="17.5"
+                      y1="6.5"
+                      x2="17.51"
+                      y2="6.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    ></line>
                   </svg>
                 </a>
               </div>
@@ -842,7 +1086,8 @@
         <div class="flex flex-col items-center space-y-6">
           <a
             class="text-text-light-muted dark:text-text-dark-muted hover:text-primary-500 dark:hover:text-primary-300 transition-all transform hover:-translate-y-1 duration-200"
-            href="https://github.com/username"
+            href="https://github.com/lbbmkrm"
+            target="_blank"
             aria-label="GitHub"
           >
             <svg
@@ -862,8 +1107,9 @@
           </a>
           <a
             class="text-text-light-muted dark:text-text-dark-muted hover:text-primary-500 dark:hover:text-primary-300 transition-all transform hover:-translate-y-1 duration-200"
-            href="https://twitter.com/username"
-            aria-label="Twitter"
+            href="https://www.instagram.com/lbbmkrm_/"
+            target="_blank"
+            aria-label="Instagram"
           >
             <svg
               class="h-6 w-6"
@@ -872,17 +1118,38 @@
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
+              <rect
+                x="2"
+                y="2"
+                width="20"
+                height="20"
+                rx="5"
+                ry="5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></rect>
               <path
-                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
               ></path>
+              <line
+                x1="17.5"
+                y1="6.5"
+                x2="17.51"
+                y2="6.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></line>
             </svg>
           </a>
           <a
             class="text-text-light-muted dark:text-text-dark-muted hover:text-primary-500 dark:hover:text-primary-300 transition-all transform hover:-translate-y-1 duration-200"
-            href="https://linkedin.com/in/username"
+            href="https://www.linkedin.com/in/labib-makarim-415435313/"
+            target="_blank"
             aria-label="LinkedIn"
           >
             <svg
@@ -916,6 +1183,8 @@
         <a
           class="[writing-mode:vertical-rl] rotate-360 text-text-light-muted dark:text-text-dark-muted hover:text-primary-500 dark:hover:text-primary-300 transition-all text-sm tracking-widest mb-24 block transform hover:-translate-y-1 duration-200"
           href="mailto:your.email@example.com"
+          aria-label="Email"
+          target="_blank"
         >
           your.email@example.com
         </a>
@@ -950,6 +1219,7 @@
             >Contact</a
           >
           <a
+            target="_blank"
             href="/resume.pdf"
             class="border border-primary-500 text-text-light dark:text-text-dark px-4 py-2 rounded hover:bg-primary-500/10 dark:hover:bg-primary-300/10 transition-all duration-300"
             >Resume</a
