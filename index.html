@@ -16,10 +16,10 @@
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Name - Personal Website</title>
+    <title>Labib Makarim - Personal Website</title>
   </head>
   <body
-    class="min-h-screen font-poppins bg-bg-light dark:bg-bg-dark text-text-light dark:text-text-dark font-sans transition-colors duration-300 ease-in-out"
+    class="min-h-screen font-poppins bg-bg-light dark:bg-bg-dark text-text-light dark:text-text-dark font-sans transition-colors duration-300 ease-in-out overflow-x-hidden"
   >
     <header
       id="main-header"
@@ -111,22 +111,27 @@
           <a
             href="#about"
             class="text-text-light-muted dark:text-text-dark-muted hover:text-primary-500 dark:hover:text-primary-300 transition-colors"
-            >About</a
+            >Tentang Saya</a
           >
           <a
             href="#experience"
             class="text-text-light-muted dark:text-text-dark-muted hover:text-primary-500 dark:hover:text-primary-300 transition-colors"
-            >Experience</a
+            >Pengalaman</a
+          >
+          <a
+            href="#certificates"
+            class="text-text-light-muted dark:text-text-dark-muted hover:text-primary-500 dark:hover:text-primary-300 transition-colors"
+            >Sertifikat</a
           >
           <a
             href="#projects"
             class="text-text-light-muted dark:text-text-dark-muted hover:text-primary-500 dark:hover:text-primary-300 transition-colors"
-            >Projects</a
+            >Proyek</a
           >
           <a
             href="#contact"
             class="text-text-light-muted dark:text-text-dark-muted hover:text-primary-500 dark:hover:text-primary-300 transition-colors"
-            >Contact</a
+            >Kontak</a
           >
           <a
             href="/resume.pdf"
@@ -152,147 +157,324 @@
         </button>
       </div>
     </header>
-    <main class="container min-h-screen pt-14 md:pt-16 mx-auto px-4 md:px-4">
+    <main
+      class="container min-h-screen pt-14 md:pt-16 mx-auto px-4 md:px-4 overflow-x-hidden"
+    >
       <!-- Hero -->
       <section
         id="hero"
-        class="min-h-screen max-w-4xl mx-auto flex items-center"
-        data-aos="zoom-in"
-        data-aos-delay="300"
+        class="min-h-screen max-w-4xl mx-auto flex items-center relative"
       >
-        <div class="w-full mx-auto">
-          <p
-            class="text-text-light-muted dark:text-text-dark-muted mb-4 font-medium"
-          >
-            Hi, my name is
-          </p>
+        <div class="w-full mx-auto z-10">
+          <div data-aos="fade-up" data-aos-delay="200">
+            <p
+              class="text-primary-500 dark:text-primary-300 mb-4 font-medium flex items-center"
+            >
+              <span
+                class="inline-block w-10 h-0.5 bg-primary-500 dark:bg-primary-300 mr-3"
+              ></span>
+              Halo, nama saya
+            </p>
+          </div>
+
           <h1
-            class="text-5xl md:text-6xl font-bold text-text-light dark:text-text-dark mb-4 leading-tight"
+            class="text-5xl md:text-6xl font-bold text-text-light dark:text-text-dark mb-4 leading-tight relative"
+            data-aos="fade-up"
+            data-aos-delay="300"
           >
-            Your Name
+            <span class="relative">
+              Labib Makarim
+              <span
+                class="absolute -bottom-2 left-0 w-1/3 h-1 bg-primary-500 dark:bg-primary-300 rounded-full"
+              ></span>
+            </span>
           </h1>
+
           <h2
             class="text-2xl md:text-4xl font-bold text-text-light-muted dark:text-text-dark-muted mt-2 leading-tight"
+            data-aos="fade-up"
+            data-aos-delay="400"
           >
             <span id="typed-text"></span>
           </h2>
+
           <p
             class="mt-8 max-w-xl text-text-light-muted dark:text-text-dark-muted text-lg leading-relaxed"
+            data-aos="fade-up"
+            data-aos-delay="500"
           >
-            I am a passionate developer specializing in building scalable and
-            user-friendly web applications. I enjoy tackling complex problems
-            and learning new technologies to create amazing digital experiences.
-          </p>
-          <p class="mt-6 text-primary-500 dark:text-primary-300 font-medium">
-            Currently available for work
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            deserunt sed amet inventore voluptatibus minus impedit minima! Alias
+            beatae ipsam possimus aliquid aspernatur debitis facilis id.
+            Recusandae numquam doloremque voluptatum.
           </p>
           <div class="mt-12">
             <a
               href="#contact"
               class="inline-block px-8 py-4 bg-transparent border-2 border-border-light dark:border-border-dark text-text-light dark:text-text-dark rounded hover:bg-primary-500/10 dark:hover:bg-primary-300/10 hover:border-primary-500 dark:hover:border-primary-300 hover:text-primary-500 dark:hover:text-primary-300 transition-all duration-300 font-medium"
             >
-              Get in touch
+              Hubungi Saya
+            </a>
+          </div>
+
+          <div class="mt-16 flex space-x-6">
+            <a
+              href="https://github.com/lbbmkrm"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-text-light-muted dark:text-text-dark-muted hover:text-primary-500 dark:hover:text-primary-300 transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-github"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/labib-makarim-415435313/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-text-light-muted dark:text-text-dark-muted hover:text-primary-500 dark:hover:text-primary-300 transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-linkedin"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/lbbmkrm_/"
+              target="_blank"
+              class="text-text-light-muted dark:text-text-dark-muted hover:text-primary-500 dark:hover:text-primary-300 transition-colors"
+              aria-label="Instagram"
+            >
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="2"
+                  y="2"
+                  width="20"
+                  height="20"
+                  rx="5"
+                  ry="5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                ></rect>
+                <path
+                  d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                ></path>
+                <line
+                  x1="17.5"
+                  y1="6.5"
+                  x2="17.51"
+                  y2="6.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                ></line>
+              </svg>
             </a>
           </div>
         </div>
       </section>
       <!-- End Hero -->
       <!-- About -->
-      <section
-        id="about"
-        class="min-h-screen max-w-4xl mx-auto py-16"
-        data-aos="fade-up"
-      >
+      <section id="about" class="min-h-screen max-w-4xl mx-auto py-16 relative">
         <h2
           data-aos="fade-down"
-          class="text-3xl md:text-4xl font-bold text-text-light dark:text-text-dark mb-8"
+          class="text-3xl md:text-4xl font-bold text-text-light dark:text-text-dark mb-8 relative inline-block"
         >
-          About Me
+          <span class="relative z-10">Tentang Saya</span>
+          <span
+            class="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-primary-500 to-secondary-500 dark:from-primary-300 dark:to-secondary-300 rounded-full"
+          ></span>
         </h2>
-        <div class="flex flex-col md:flex-row items-center gap-6 md:gap-8">
+
+        <div
+          class="flex flex-col md:flex-row items-start gap-8 md:gap-12 relative z-10"
+        >
+          <!-- Profile Image -->
+          <div class="w-full md:w-1/3 max-w-xs mx-auto" data-aos="fade-right">
+            <div class="relative group">
+              <div
+                class="absolute -inset-1 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000"
+              ></div>
+              <div
+                class="relative bg-card-light dark:bg-card-dark rounded-lg overflow-hidden"
+              >
+                <div
+                  class="aspect-square bg-gray-200 dark:bg-gray-700 flex items-center justify-center"
+                >
+                  <img
+                    src="./public/images/profile.jpg"
+                    alt="profile"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- About Content -->
           <div
-            class="md:col-span-2 space-y-4 text-text-light-muted dark:text-text-dark-muted"
+            class="w-full md:w-2/3 space-y-6 text-text-light-muted dark:text-text-dark-muted"
           >
-            <p data-aos="fade-right">
-              Hello! I'm a web developer with a passion for creating elegant and
-              functional websites. I specialize in modern frontend technologies
-              and enjoy bringing ideas to life in the browser.
+            <p
+              data-aos="fade-up"
+              class="relative pl-4 border-l-2 border-primary-500 dark:border-primary-300"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+              dolor esse quam nobis culpa, vel cupiditate, eaque deleniti quis
+              voluptatum consequuntur, blanditiis omnis. Dicta!
             </p>
-            <p data-aos="fade-right">
-              I am passionate about learning new technologies and contributing
-              to open-source projects. My goal is to create impactful solutions
-              through code and continuously improve my skills in modern web
-              frameworks and tools.
+            <p
+              data-aos="fade-up"
+              data-aos-delay="100"
+              class="relative pl-4 border-l-2 border-secondary-500 dark:border-secondary-300"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              provident necessitatibus labore, quaerat exercitationem architecto
+              dicta! Laborum magnam accusamus quas sed? Laboriosam incidunt, in
+              necessitatibus quam explicabo ab.
             </p>
 
             <!-- Skills Section -->
-            <div class="mt-8">
+            <div class="mt-10">
               <h3
                 data-aos="fade-up"
-                class="text-xl font-semibold text-text-light dark:text-text-dark mb-4"
+                class="text-xl font-semibold text-text-light dark:text-text-dark mb-6 relative inline-block"
               >
-                Skills & Expertise
+                <span class="relative z-10" data-aos="fade-up">Keahlian</span>
+                <span
+                  class="absolute -bottom-1 left-0 w-full h-0.5 bg-accent-500 dark:bg-accent-300 rounded-full"
+                ></span>
               </h3>
 
-              <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 <!-- Development -->
-                <div data-aos="fade-up" data-aos-delay="100">
-                  <h4
-                    class="text-sm uppercase tracking-wider text-primary-500 dark:text-primary-300 font-medium mb-2"
-                  >
-                    Development
-                  </h4>
-                  <div class="flex flex-wrap gap-1.5">
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  class="bg-card-light dark:bg-card-dark p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
+                >
+                  <div class="flex items-center mb-3">
                     <span
-                      class="px-2 py-1 rounded-full bg-primary-500/10 dark:bg-primary-300/10 text-primary-500 dark:text-primary-300 text-xs font-medium border border-primary-500/20 dark:border-primary-300/20"
+                      class="material-icons text-primary-500 dark:text-primary-300 mr-2"
+                      >code</span
+                    >
+                    <h4
+                      class="text-sm uppercase tracking-wider text-primary-500 dark:text-primary-300 font-medium"
+                    >
+                      Pengembangan
+                    </h4>
+                  </div>
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      class="px-3 py-1.5 rounded-full bg-primary-500/10 dark:bg-primary-300/10 text-primary-500 dark:text-primary-300 text-xs font-medium border border-primary-500/20 dark:border-primary-300/20 hover:bg-primary-500/20 dark:hover:bg-primary-300/20 transition-colors duration-300"
                       >JavaScript</span
                     >
                     <span
-                      class="px-2 py-1 rounded-full bg-primary-500/10 dark:bg-primary-300/10 text-primary-500 dark:text-primary-300 text-xs font-medium border border-primary-500/20 dark:border-primary-300/20"
+                      class="px-3 py-1.5 rounded-full bg-primary-500/10 dark:bg-primary-300/10 text-primary-500 dark:text-primary-300 text-xs font-medium border border-primary-500/20 dark:border-primary-300/20 hover:bg-primary-500/20 dark:hover:bg-primary-300/20 transition-colors duration-300"
                       >TypeScript</span
                     >
                     <span
-                      class="px-2 py-1 rounded-full bg-primary-500/10 dark:bg-primary-300/10 text-primary-500 dark:text-primary-300 text-xs font-medium border border-primary-500/20 dark:border-primary-300/20"
+                      class="px-3 py-1.5 rounded-full bg-primary-500/10 dark:bg-primary-300/10 text-primary-500 dark:text-primary-300 text-xs font-medium border border-primary-500/20 dark:border-primary-300/20 hover:bg-primary-500/20 dark:hover:bg-primary-300/20 transition-colors duration-300"
                       >PHP</span
                     >
                   </div>
                 </div>
 
                 <!-- Frameworks -->
-                <div data-aos="fade-up" data-aos-delay="200">
-                  <h4
-                    class="text-sm uppercase tracking-wider text-secondary-500 dark:text-secondary-300 font-medium mb-2"
-                  >
-                    Frameworks
-                  </h4>
-                  <div class="flex flex-wrap gap-1.5">
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                  class="bg-card-light dark:bg-card-dark p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
+                >
+                  <div class="flex items-center mb-3">
                     <span
-                      class="px-2 py-1 rounded-full bg-secondary-500/10 dark:bg-secondary-300/10 text-secondary-500 dark:text-secondary-300 text-xs font-medium border border-secondary-500/20 dark:border-secondary-300/20"
+                      class="material-icons text-secondary-500 dark:text-secondary-300 mr-2"
+                      >layers</span
+                    >
+                    <h4
+                      class="text-sm uppercase tracking-wider text-secondary-500 dark:text-secondary-300 font-medium"
+                    >
+                      Framework
+                    </h4>
+                  </div>
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      class="px-3 py-1.5 rounded-full bg-secondary-500/10 dark:bg-secondary-300/10 text-secondary-500 dark:text-secondary-300 text-xs font-medium border border-secondary-500/20 dark:border-secondary-300/20 hover:bg-secondary-500/20 dark:hover:bg-secondary-300/20 transition-colors duration-300"
                       >Express</span
                     >
                     <span
-                      class="px-2 py-1 rounded-full bg-secondary-500/10 dark:bg-secondary-300/10 text-secondary-500 dark:text-secondary-300 text-xs font-medium border border-secondary-500/20 dark:border-secondary-300/20"
+                      class="px-3 py-1.5 rounded-full bg-secondary-500/10 dark:bg-secondary-300/10 text-secondary-500 dark:text-secondary-300 text-xs font-medium border border-secondary-500/20 dark:border-secondary-300/20 hover:bg-secondary-500/20 dark:hover:bg-secondary-300/20 transition-colors duration-300"
                       >Laravel</span
                     >
                     <span
-                      class="px-2 py-1 rounded-full bg-secondary-500/10 dark:bg-secondary-300/10 text-secondary-500 dark:text-secondary-300 text-xs font-medium border border-secondary-500/20 dark:border-secondary-300/20"
+                      class="px-3 py-1.5 rounded-full bg-secondary-500/10 dark:bg-secondary-300/10 text-secondary-500 dark:text-secondary-300 text-xs font-medium border border-secondary-500/20 dark:border-secondary-300/20 hover:bg-secondary-500/20 dark:hover:bg-secondary-300/20 transition-colors duration-300"
                       >Vue</span
                     >
                     <span
-                      class="px-2 py-1 rounded-full bg-secondary-500/10 dark:bg-secondary-300/10 text-secondary-500 dark:text-secondary-300 text-xs font-medium border border-secondary-500/20 dark:border-secondary-300/20"
+                      class="px-3 py-1.5 rounded-full bg-secondary-500/10 dark:bg-secondary-300/10 text-secondary-500 dark:text-secondary-300 text-xs font-medium border border-secondary-500/20 dark:border-secondary-300/20 hover:bg-secondary-500/20 dark:hover:bg-secondary-300/20 transition-colors duration-300"
                       >React</span
                     >
                   </div>
                 </div>
 
-                <!-- Frontend -->
-                <div data-aos="fade-up" data-aos-delay="300">
-                  <h4
-                    class="text-sm uppercase tracking-wider text-accent-500 dark:text-accent-300 font-medium mb-2"
-                  >
-                    Styling
-                  </h4>
-                  <div class="flex flex-wrap gap-1.5">
+                <!-- Styling -->
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  class="bg-card-light dark:bg-card-dark p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
+                >
+                  <div class="flex items-center mb-3">
+                    <span
+                      class="material-icons text-accent-500 dark:text-accent-300 mr-2"
+                      >palette</span
+                    >
+                    <h4
+                      class="text-sm uppercase tracking-wider text-accent-500 dark:text-accent-300 font-medium"
+                    >
+                      Styling
+                    </h4>
+                  </div>
+                  <div class="flex flex-wrap gap-2">
                     <span
                       class="px-2 py-1 rounded-full bg-accent-500/10 dark:bg-accent-300/10 text-accent-500 dark:text-accent-300 text-xs font-medium border border-accent-500/20 dark:border-accent-300/20"
                       >TailwindCSS</span
@@ -363,8 +545,9 @@
       <section id="experience" class="min-h-screen max-w-4xl mx-auto py-16">
         <h2
           class="text-3xl md:text-4xl font-bold text-text-light dark:text-text-dark mb-8"
+          data-aos="fade-down"
         >
-          Experience
+          Pengalaman
         </h2>
         <div class="space-y-12">
           <div
@@ -374,14 +557,14 @@
             <div
               class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-primary-500 dark:bg-primary-300"
             ></div>
-            <div class="mb-2">
+            <div class="mb-2 flex flex-col">
               <h3
                 class="text-xl font-semibold inline text-text-light dark:text-text-dark"
               >
-                Backend Developer
+                Internship Backend Developer
               </h3>
               <span class="text-primary-500 dark:text-primary-300 ml-2"
-                >@ Tech Solutions Inc.</span
+                >@ Labani Media Nusantara</span
               >
             </div>
             <p
@@ -395,8 +578,8 @@
                   >▹</span
                 >
                 <span class="text-text-light-muted dark:text-text-dark-muted"
-                  >Developed RESTful APIs using Node.js and Express for a
-                  content management system.</span
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Error praesentium deleniti earum!</span
                 >
               </li>
               <li class="flex items-start space-x-2">
@@ -404,8 +587,8 @@
                   >▹</span
                 >
                 <span class="text-text-light-muted dark:text-text-dark-muted"
-                  >Optimized database queries with PostgreSQL to improve
-                  application performance.</span
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates vero aliquam incidunt asperiores quia?</span
                 >
               </li>
               <li class="flex items-start space-x-2">
@@ -413,8 +596,9 @@
                   >▹</span
                 >
                 <span class="text-text-light-muted dark:text-text-dark-muted"
-                  >Collaborated with front-end developers to integrate APIs with
-                  React-based interfaces.</span
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur repudiandae accusamus itaque expedita assumenda
+                  eaque.</span
                 >
               </li>
             </ul>
@@ -426,14 +610,14 @@
             <div
               class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-primary-500 dark:bg-primary-300"
             ></div>
-            <div class="mb-2">
+            <div class="mb-2 flex flex-col">
               <h3
                 class="text-xl font-semibold inline text-text-light dark:text-text-dark"
               >
-                Web Developer
+                Internship Web Developer
               </h3>
               <span class="text-primary-500 dark:text-primary-300 ml-2"
-                >@ Creative Agency</span
+                >@ Codinglab</span
               >
             </div>
             <p
@@ -447,8 +631,8 @@
                   >▹</span
                 >
                 <span class="text-text-light-muted dark:text-text-dark-muted"
-                  >Built responsive web applications using React and Tailwind
-                  CSS.</span
+                  >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Quae perferendis incidunt temporibus!</span
                 >
               </li>
               <li class="flex items-start space-x-2">
@@ -456,8 +640,8 @@
                   >▹</span
                 >
                 <span class="text-text-light-muted dark:text-text-dark-muted"
-                  >Implemented state management with Redux for complex user
-                  interfaces.</span
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Saepe minima nobis culpa harum voluptatum?</span
                 >
               </li>
               <li class="flex items-start space-x-2">
@@ -465,8 +649,8 @@
                   >▹</span
                 >
                 <span class="text-text-light-muted dark:text-text-dark-muted"
-                  >Integrated third-party APIs to enhance application
-                  functionality.</span
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam quod eaque nemo quas provident.</span
                 >
               </li>
             </ul>
@@ -474,333 +658,225 @@
         </div>
       </section>
       <!-- End Experience -->
+
+      <!-- Certificates -->
+      <section id="certificates" class="min-h-screen max-w-4xl mx-auto py-16">
+        <!-- Decorative elements -->
+        <div
+          class="absolute right-0 top-1/4 w-64 h-64 bg-primary-500/5 dark:bg-primary-300/5 rounded-full filter blur-3xl"
+        ></div>
+        <div
+          class="absolute left-0 bottom-1/4 w-64 h-64 bg-secondary-500/5 dark:bg-secondary-300/5 rounded-full filter blur-3xl"
+        ></div>
+
+        <h2
+          class="text-3xl md:text-4xl font-bold text-text-light dark:text-text-dark mb-8 relative"
+          data-aos="fade-down"
+        >
+          <span class="relative z-10">Riwayat Belajar & Sertifikat</span>
+          <span
+            class="absolute -bottom-2 left-0 w-40 h-1 bg-gradient-to-r from-primary-500 to-secondary-500 dark:from-primary-300 dark:to-secondary-300 rounded-full"
+          ></span>
+        </h2>
+
+        <!-- Accordion Container -->
+        <div class="space-y-4" data-aos="fade-up">
+          <!-- Certificate 1 - Accordion Item -->
+          <div
+            class="certificate-accordion bg-card-light dark:bg-card-dark rounded-lg shadow-md overflow-hidden"
+          >
+            <!-- Accordion Header -->
+            <div
+              class="accordion-header flex justify-between items-center p-4 cursor-pointer border-l-4 border-primary-500 dark:border-primary-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+              data-target="cert-content-1"
+            >
+              <div class="flex items-center">
+                <div
+                  class="bg-primary-500/20 dark:bg-primary-300/20 text-primary-500 dark:text-primary-300 text-xs font-medium py-1.5 px-3 rounded-full border border-primary-500/30 dark:border-primary-300/30 mr-3"
+                >
+                  2025
+                </div>
+                <div>
+                  <h3
+                    class="text-xl font-semibold text-text-light dark:text-text-dark"
+                  >
+                    Backend Pemula dengan JavaScript
+                  </h3>
+                  <p
+                    class="text-primary-500 dark:text-primary-300 flex items-center"
+                  >
+                    <span class="material-icons text-sm mr-1">school</span>
+                    Dicoding Indonesia
+                  </p>
+                </div>
+              </div>
+              <span
+                class="material-icons accordion-icon transition-transform duration-300"
+                >expand_more</span
+              >
+            </div>
+
+            <!-- Accordion Content -->
+            <div
+              id="cert-content-1"
+              class="accordion-content hidden p-4 pt-0 border-t border-gray-200 dark:border-gray-700"
+            >
+              <div class="pl-12 pt-4">
+                <p class="text-text-light-muted dark:text-text-dark-muted mb-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam quod eaque nemo quas provident.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span
+                    class="px-3 py-1 bg-primary-500/10 dark:bg-primary-300/10 text-primary-500 dark:text-primary-300 rounded-full text-xs"
+                    >Node.js</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-primary-500/10 dark:bg-primary-300/10 text-primary-500 dark:text-primary-300 rounded-full text-xs"
+                    >Hapi.js</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-primary-500/10 dark:bg-primary-300/10 text-primary-500 dark:text-primary-300 rounded-full text-xs"
+                    >Express.js</span
+                  >
+                </div>
+                <div class="flex items-center justify-between mt-6">
+                  <span
+                    class="text-sm text-text-light-muted dark:text-text-dark-muted"
+                    >ID: EYX4KY3K6PDL</span
+                  >
+                  <a
+                    href="https://www.dicoding.com/certificates/EYX4KY3K6PDL"
+                    class="text-primary-500 dark:text-primary-300 hover:underline flex items-center hover:translate-x-1 transition-transform"
+                    target="_blank"
+                  >
+                    <span>Lihat Sertifikat</span>
+                    <span class="material-icons text-sm ml-1">open_in_new</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate 2 - Accordion Item -->
+          <div
+            class="certificate-accordion bg-card-light dark:bg-card-dark rounded-lg shadow-md overflow-hidden"
+          >
+            <!-- Accordion Header -->
+            <div
+              class="accordion-header flex justify-between items-center p-4 cursor-pointer border-l-4 border-secondary-500 dark:border-secondary-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+              data-target="cert-content-2"
+            >
+              <div class="flex items-center">
+                <div
+                  class="bg-secondary-500/20 dark:bg-secondary-300/20 text-secondary-500 dark:text-secondary-300 text-xs font-medium py-1.5 px-3 rounded-full border border-secondary-500/30 dark:border-secondary-300/30 mr-3"
+                >
+                  2025
+                </div>
+                <div>
+                  <h3
+                    class="text-xl font-semibold text-text-light dark:text-text-dark"
+                  >
+                    Dasar Pemrograman JavaScript
+                  </h3>
+                  <p
+                    class="text-secondary-500 dark:text-secondary-300 flex items-center"
+                  >
+                    <span class="material-icons text-sm mr-1">school</span>
+                    Dicoding Indonesia
+                  </p>
+                </div>
+              </div>
+              <span
+                class="material-icons accordion-icon transition-transform duration-300"
+                >expand_more</span
+              >
+            </div>
+
+            <!-- Accordion Content -->
+            <div
+              id="cert-content-2"
+              class="accordion-content hidden p-4 pt-0 border-t border-gray-200 dark:border-gray-700"
+            >
+              <div class="pl-12 pt-4">
+                <p class="text-text-light-muted dark:text-text-dark-muted mb-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam quod eaque nemo quas provident.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span
+                    class="px-3 py-1 bg-secondary-500/10 dark:bg-secondary-300/10 text-secondary-500 dark:text-secondary-300 rounded-full text-xs"
+                    >JavaScript</span
+                  >
+                </div>
+                <div class="flex items-center justify-between mt-6">
+                  <span
+                    class="text-sm text-text-light-muted dark:text-text-dark-muted"
+                    >ID: JMZVV1VVRZN9</span
+                  >
+                  <a
+                    href="https://www.dicoding.com/certificates/JMZVV1VVRZN9"
+                    class="text-secondary-500 dark:text-secondary-300 hover:underline flex items-center hover:translate-x-1 transition-transform"
+                    target="_blank"
+                  >
+                    <span>Lihat Sertifikat</span>
+                    <span class="material-icons text-sm ml-1">open_in_new</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add accordion functionality -->
+      </section>
+      <!-- End Certificates -->
+
       <!-- Projects -->
       <section id="projects" class="min-h-screen max-w-4xl mx-auto py-16">
-        <h2
-          class="text-3xl md:text-4xl font-bold text-text-light dark:text-text-dark mb-8"
-        >
-          Projects
-        </h2>
-        <div class="mb-20">
-          <div
-            data-aos="fade-up"
-            class="relative rounded-lg overflow-hidden bg-card-light dark:bg-card-dark shadow-lg"
-          >
-            <div class="relative">
-              <div
-                class="absolute inset-0 bg-bg-light/60 dark:bg-bg-dark/60 hover:bg-bg-light/40 dark:hover:bg-bg-dark/40 transition-all duration-300 z-10"
-              ></div>
-              <img
-                src="./public/images/programming-background.jpg"
-                alt="Project Screenshot"
-                class="w-full h-64 md:h-80 object-cover"
-                loading="lazy"
-              />
-            </div>
-            <div
-              class="absolute inset-0 z-20 flex flex-col justify-center p-6 md:p-10"
+        <div data-aos="fade-up" class="text-center py-16">
+          <div class="mb-8">
+            <svg
+              class="h-24 w-24 mx-auto text-primary-500 dark:text-primary-300"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <p
-                class="text-text-light-muted dark:text-text-dark-muted mb-2 font-medium"
-              >
-                Featured Project
-              </p>
-              <h3
-                class="text-2xl md:text-3xl font-bold text-text-light dark:text-text-dark mb-3"
-              >
-                Personal Dashboard
-              </h3>
-              <div
-                class="bg-card-light dark:bg-card-dark p-4 md:p-6 rounded-lg backdrop-blur-sm mb-4"
-              >
-                <p
-                  class="text-text-light-muted dark:text-text-dark-muted text-sm md:text-base"
-                >
-                  A customizable dashboard application for tracking tasks,
-                  weather, and news using Next.js and OpenAI API for intelligent
-                  suggestions.
-                </p>
-              </div>
-              <div class="flex flex-wrap gap-3 mb-6">
-                <span
-                  class="text-xs bg-border-light dark:bg-border-dark text-text-light dark:text-text-dark px-3 py-1 rounded-full"
-                  >Next.js</span
-                >
-                <span
-                  class="text-xs bg-border-light dark:bg-border-dark text-text-light dark:text-text-dark px-3 py-1 rounded-full"
-                  >TailwindCSS</span
-                >
-                <span
-                  class="text-xs bg-border-light dark:bg-border-dark text-text-light dark:text-text-dark px-3 py-1 rounded-full"
-                  >OpenAI API</span
-                >
-                <span
-                  class="text-xs bg-border-light dark:bg-border-dark text-text-light dark:text-text-dark px-3 py-1 rounded-full"
-                  >Prisma</span
-                >
-              </div>
-              <div class="flex space-x-4">
-                <a
-                  href="https://github.com/lbbmkrm/"
-                  class="text-text-light-muted dark:text-text-dark-muted hover:text-primary-500 dark:hover:text-primary-300 transition-colors"
-                  aria-label="View project on GitHub"
-                >
-                  <svg
-                    class="h-6 w-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                    ></path>
-                  </svg>
-                </a>
-                <a
-                  href="https://project1.demo"
-                  class="text-text-light-muted dark:text-text-dark-muted hover:text-primary-500 dark:hover:text-primary-300 transition-colors"
-                  aria-label="View live demo"
-                >
-                  <svg
-                    class="h-6 w-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                    ></path>
-                    <path
-                      d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542-7-4.477 0-8.268-2.943-9.542-7z"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                    ></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+            </svg>
           </div>
-        </div>
-        <h3
-          class="text-xl md:text-2xl font-bold text-text-light dark:text-text-dark mb-6"
-        >
-          Other Noteworthy Projects
-        </h3>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-          <div
-            data-aos="fade-up"
-            class="bg-card-light dark:bg-card-dark rounded-lg p-6 hover:translate-y-[-5px] transition-all duration-300 shadow-lg"
+          <h3
+            class="text-2xl md:text-3xl font-bold text-text-light dark:text-text-dark mb-4"
           >
-            <div class="flex justify-between items-start mb-4">
-              <div class="text-primary-500 dark:text-primary-300">
-                <svg
-                  class="h-10 w-10"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                  ></path>
-                </svg>
-              </div>
-              <div class="flex space-x-3">
-                <a
-                  href="https://github.com/lbbmkrm"
-                  target="_blank"
-                  class="text-text-light-muted dark:text-text-dark-muted hover:text-primary-500 dark:hover:text-primary-300 transition-colors"
-                  aria-label="View project on GitHub"
-                >
-                  <svg
-                    class="h-5 w-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                    ></path>
-                  </svg>
-                </a>
-                <a
-                  href="https://project2.demo"
-                  target="_blank"
-                  class="text-text-light-muted dark:text-text-dark-muted hover:text-primary-500 dark:hover:text-primary-300 transition-colors"
-                  aria-label="View live demo"
-                >
-                  <svg
-                    class="h-5 w-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                    ></path>
-                    <path
-                      d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                    ></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <h3
-              class="text-xl font-semibold text-text-light dark:text-text-dark mb-2"
-            >
-              Task Manager
-            </h3>
-            <p
-              class="text-text-light-muted dark:text-text-dark-muted text-sm mb-4"
-            >
-              A task management application built with React and Redux,
-              featuring drag-and-drop functionality and real-time updates.
-            </p>
-            <div class="flex flex-wrap gap-2">
-              <span
-                class="text-xs bg-border-light dark:bg-border-dark text-text-light dark:text-text-dark px-2 py-1 rounded-full"
-                >React</span
-              >
-              <span
-                class="text-xs bg-border-light dark:bg-border-dark text-text-light dark:text-text-dark px-2 py-1 rounded-full"
-                >Redux</span
-              >
-              <span
-                class="text-xs bg-border-light dark:bg-border-dark text-text-light dark:text-text-dark px-2 py-1 rounded-full"
-                >Chart.js</span
-              >
-            </div>
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-delay="200"
-            class="bg-card-light dark:bg-card-dark rounded-lg p-6 hover:translate-y-[-5px] transition-all duration-300 shadow-lg"
-          >
-            <div class="flex justify-between items-start mb-4">
-              <div class="text-primary-500 dark:text-primary-300">
-                <svg
-                  class="h-10 w-10"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                  ></path>
-                </svg>
-              </div>
-              <div class="flex space-x-3">
-                <a
-                  href="https://github.com/lbbmkrm"
-                  target="_blank"
-                  class="text-text-light-muted dark:text-text-dark-muted hover:text-primary-500 dark:hover:text-primary-300 transition-colors"
-                  aria-label="View project on GitHub"
-                >
-                  <svg
-                    class="h-5 w-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                    ></path>
-                  </svg>
-                </a>
-                <a
-                  href="https://project3.demo"
-                  target="_blank"
-                  class="text-text-light-muted dark:text-text-dark-muted hover:text-primary-500 dark:hover:text-primary-300 transition-colors"
-                  aria-label="View live demo"
-                >
-                  <svg
-                    class="h-5 w-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                    ></path>
-                    <path
-                      d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                    ></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <h3
-              class="text-xl font-semibold text-text-light dark:text-text-dark mb-2"
-            >
-              Mobile E-Commerce
-            </h3>
-            <p
-              class="text-text-light-muted dark:text-text-dark-muted text-sm mb-4"
-            >
-              A mobile-first e-commerce application built with React Native,
-              featuring Firebase for authentication and real-time database.
-            </p>
-            <div class="flex flex-wrap gap-2">
-              <span
-                class="text-xs bg-border-light dark:bg-border-dark text-text-light dark:text-text-dark px-2 py-1 rounded-full"
-                >React Native</span
-              >
-              <span
-                class="text-xs bg-border-light dark:bg-border-dark text-text-light dark:text-text-dark px-2 py-1 rounded-full"
-                >Firebase</span
-              >
-              <span
-                class="text-xs bg-border-light dark:bg-border-dark text-text-light dark:text-text-dark px-2 py-1 rounded-full"
-                >Expo</span
-              >
-            </div>
-          </div>
-        </div>
-        <div class="mt-10 text-center">
+            Check Out My Projects on GitHub
+          </h3>
           <a
             href="https://github.com/lbbmkrm"
             target="_blank"
-            class="inline-block px-6 py-3 border border-primary-500 text-primary-500 dark:text-primary-300 rounded hover:bg-primary-500/10 dark:hover:bg-primary-300/10 transition-all duration-300"
+            class="inline-block px-8 py-4 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition-all duration-300 shadow-lg"
           >
-            View More Projects
+            <div class="flex items-center justify-center">
+              <svg
+                class="h-5 w-5 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                ></path>
+              </svg>
+              View My GitHub
+            </div>
           </a>
         </div>
       </section>
@@ -916,7 +992,7 @@
                   <a
                     href="mailto:your.email@example.com"
                     class="text-text-light-muted dark:text-text-dark-muted hover:text-primary-500 dark:hover:text-primary-300 transition-colors"
-                    >your.email@example.com</a
+                    >labibmakarim197@gmail.com</a
                   >
                 </div>
               </div>
@@ -948,7 +1024,7 @@
                     Location
                   </h3>
                   <p class="text-text-light-muted dark:text-text-dark-muted">
-                    City, Country
+                    Medan, Indonesia
                   </p>
                 </div>
               </div>
@@ -1182,11 +1258,11 @@
       <aside class="fixed right-8 bottom-0 hidden lg:block">
         <a
           class="[writing-mode:vertical-rl] rotate-360 text-text-light-muted dark:text-text-dark-muted hover:text-primary-500 dark:hover:text-primary-300 transition-all text-sm tracking-widest mb-24 block transform hover:-translate-y-1 duration-200"
-          href="mailto:your.email@example.com"
+          href="mailto:labibmakarim197@gmail.com"
           aria-label="Email"
           target="_blank"
         >
-          your.email@example.com
+          labibmakarim197@gmail.com
         </a>
         <div
           class="w-px h-24 bg-border-light dark:bg-border-dark mx-auto"
@@ -1238,7 +1314,7 @@
       <div
         class="container mx-auto px-4 md:px-12 text-center text-text-light-muted dark:text-text-dark-muted text-sm"
       >
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
+        <p>&copy; 2025 Labib Makarim. All rights reserved.</p>
       </div>
     </footer>
     <script type="module" src="/src/main.js"></script>
